@@ -6,140 +6,105 @@
   <title>Agüita Mía – Las del Triciclo</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
+      margin: 0;
       font-family: 'Fredoka', sans-serif;
-      background-color: #121212;
-      color: #fff;
-      line-height: 1.6;
+      background: linear-gradient(to bottom, #dff6f0, #fff);
+      color: #333;
     }
     header {
-      background-color: #1e1e1e;
-      padding: 1rem;
+      background: url('tropical-header.jpg') center/cover no-repeat;
+      color: white;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 3rem 1rem;
     }
     header img {
-      max-width: 120px;
-      transition: transform 0.3s;
-    }
-    header img:hover {
-      transform: scale(1.05);
+      max-width: 140px;
     }
     nav {
       margin-top: 1rem;
     }
     nav a {
-      color: #ff5ca2;
-      margin: 0 0.5rem;
+      color: #ffffff;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffa5d8;
+      background: rgba(0,0,0,0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
     }
     section {
-      padding: 3rem 1.5rem;
-      max-width: 900px;
+      padding: 2rem 1.5rem;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
-      color: #ff5ca2;
-      border-bottom: 2px solid #ff5ca2;
-      padding-bottom: 0.5rem;
+      color: #0ab3a3;
+      border-bottom: 2px solid #0ab3a3;
       margin-bottom: 1rem;
     }
     .sabores {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 1rem;
-      justify-content: center;
+      text-align: center;
     }
     .sabor {
-      background-color: #1e1e1e;
-      padding: 1rem;
+      background-color: #fefefe;
+      border: 2px dashed #ff8aa1;
       border-radius: 12px;
-      width: 140px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(255, 92, 162, 0.3);
+      padding: 1rem;
     }
     img.responsive {
-      width: 100%;
-      max-width: 800px;
+      max-width: 100%;
       border-radius: 20px;
-      margin-top: 1rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 1rem 0;
     }
     footer {
-      background-color: #1e1e1e;
       text-align: center;
+      background: #0ab3a3;
+      color: white;
       padding: 2rem 1rem;
-      margin-top: 2rem;
     }
     .whatsapp-btn {
+      display: inline-block;
       background-color: #25D366;
       color: white;
       padding: 1rem 2rem;
-      border-radius: 50px;
       text-decoration: none;
-      display: inline-block;
+      border-radius: 30px;
+      font-weight: bold;
       margin-top: 1rem;
-      transition: background-color 0.3s;
-    }
-    .whatsapp-btn:hover {
-      background-color: #1ebc5e;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: inline-block;
-        margin: 0.3rem;
-      }
-      .sabor {
-        width: 100%;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="/logo.png" alt="Logo Agüita Mía">
+    <img src="logo.png" alt="Logo Agüita Mía">
+    <h1>Agüita Mía – Las del Triciclo</h1>
     <nav>
-      <a href="#quienes">Quiénes somos</a>
+      <a href="#historia">Nuestra historia</a>
       <a href="#mision">Misión y Visión</a>
       <a href="#sabores">Sabores</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section id="inicio">
-    <h2>Bienvenidos a Agüita Mía – Las del Triciclo</h2>
-    <p style="text-align:center">Las aguas frescas más sabrosas y tradicionales de Guadalajara, con un estilo único y juvenil.</p>
-    <img src="/aguas-frescas.jpg" alt="Aguas frescas coloridas" class="responsive">
-  </section>
-
-  <section id="quienes">
-    <h2>Quiénes somos</h2>
-    <p>Somos una marca móvil que celebra la tradición mexicana de las aguas frescas, llevándolas con estilo fresco y actual a todos los rincones de Guadalajara. Nuestros triciclos son nuestra esencia y el corazón de nuestro sabor.</p>
+  <section id="historia">
+    <h2>Nuestra historia</h2>
+    <p>Agüita Mía nació del sueño de dos emprendedores tapatíos que decidieron llevar la tradición de las aguas frescas mexicanas a las calles, pero con un estilo joven, colorido y sobre ruedas. Nuestros triciclos son una fiesta de sabor, color y alegría que recorren la ciudad llevando lo mejor de la fruta natural a cada rincón.</p>
+    <img src="1000418508.png" alt="Aguas frescas" class="responsive">
   </section>
 
   <section id="mision">
     <h2>Misión y Visión</h2>
-    <p><strong>Misión:</strong> Refrescar el día a día de las personas con aguas frescas auténticas, preparadas con ingredientes naturales y mucho cariño.</p>
-    <p><strong>Visión:</strong> Ser la marca de referencia en aguas frescas móviles en México, inspirando alegría, frescura y tradición en cada vaso.</p>
+    <p><strong>Misión:</strong> Refrescar con alegría a cada persona con aguas frescas auténticas, naturales y llenas de sabor.</p>
+    <p><strong>Visión:</strong> Ser la marca de aguas frescas móviles más reconocida y querida de México, llevando sabor, color y cultura a cada comunidad.</p>
+    <img src="1000418496.png" alt="Sabores coloridos" class="responsive">
   </section>
 
   <section id="sabores">
-    <h2>Nuestros Sabores</h2>
+    <h2>Sabores que enamoran</h2>
     <div class="sabores">
       <div class="sabor">Horchata</div>
       <div class="sabor">Horchata Rosa</div>
@@ -150,14 +115,16 @@
       <div class="sabor">Piña</div>
       <div class="sabor">Sabores de Temporada</div>
     </div>
+    <img src="1000418509.png" alt="Vasos coloridos" class="responsive">
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Quieres un triciclo de Agüita Mía en tu evento o colonia?</p>
-    <p><strong>Teléfono:</strong> 331 070 3134</p>
+    <p>¿Quieres un triciclo en tu evento o barrio? Escríbenos.</p>
+    <p><strong>Teléfono:</strong> 331 070 2134</p>
     <p><strong>Responsable:</strong> David Zuno</p>
-    <a class="whatsapp-btn" href="https://wa.me/523310703134" target="_blank">Contáctanos por WhatsApp</a>
+    <a class="whatsapp-btn" href="https://wa.me/523310702134" target="_blank">Escríbenos por WhatsApp</a>
+    <img src="1000418458.png" alt="Triciclo Agüita Mía" class="responsive">
   </section>
 
   <footer>
