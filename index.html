@@ -6,38 +6,55 @@
   <title>Agüita Mía – Las del Triciclo</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Fredoka', sans-serif;
       background-color: #121212;
       color: #fff;
+      line-height: 1.6;
     }
     header {
       background-color: #1e1e1e;
       padding: 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header img {
-      max-width: 150px;
+      max-width: 120px;
+      transition: transform 0.3s;
+    }
+    header img:hover {
+      transform: scale(1.05);
     }
     nav {
       margin-top: 1rem;
     }
     nav a {
       color: #ff5ca2;
-      margin: 0 1rem;
+      margin: 0 0.5rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffa5d8;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 800px;
+      padding: 3rem 1.5rem;
+      max-width: 900px;
       margin: auto;
     }
     h2 {
       color: #ff5ca2;
       border-bottom: 2px solid #ff5ca2;
       padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     .sabores {
       display: flex;
@@ -48,15 +65,48 @@
     .sabor {
       background-color: #1e1e1e;
       padding: 1rem;
-      border-radius: 10px;
+      border-radius: 12px;
       width: 140px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(255, 92, 162, 0.3);
+    }
+    img.responsive {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 20px;
+      margin-top: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     footer {
       background-color: #1e1e1e;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       margin-top: 2rem;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebc5e;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 0.3rem;
+      }
+      .sabor {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -73,8 +123,8 @@
 
   <section id="inicio">
     <h2>Bienvenidos a Agüita Mía – Las del Triciclo</h2>
-    <p>Las aguas frescas más sabrosas y tradicionales de Guadalajara, con un estilo único y juvenil. ¡Síguenos y refréscate con nosotros!</p>
-    <img src="/aguas-frescas.jpg" alt="Aguas frescas coloridas" style="width:100%; border-radius: 20px; margin-top: 1rem;">
+    <p style="text-align:center">Las aguas frescas más sabrosas y tradicionales de Guadalajara, con un estilo único y juvenil.</p>
+    <img src="/aguas-frescas.jpg" alt="Aguas frescas coloridas" class="responsive">
   </section>
 
   <section id="quienes">
@@ -107,6 +157,7 @@
     <p>¿Quieres un triciclo de Agüita Mía en tu evento o colonia?</p>
     <p><strong>Teléfono:</strong> 331 070 3134</p>
     <p><strong>Responsable:</strong> David Zuno</p>
+    <a class="whatsapp-btn" href="https://wa.me/523310703134" target="_blank">Contáctanos por WhatsApp</a>
   </section>
 
   <footer>
