@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #e7f9f2, #ffffff);
+    background: #ffffff;
     margin: 0;
     color: #333;
 }
@@ -14,12 +14,12 @@ body {
     color: #fff;
 }
 .logo {
-    width: 150px;
+    width: 140px;
     margin-bottom: 1rem;
 }
 section {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 h1, h2 {
@@ -28,6 +28,14 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #d6f5e3;
-    color: #333;
+    background-color: #e6f9f2;
+}
+.galeria {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.galeria img {
+    width: 200px;
+    border-radius: 1rem;
 }
