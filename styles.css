@@ -1,16 +1,33 @@
+
 body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e7f9f2, #ffffff);
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: white;
-    text-align: center;
+    color: #333;
 }
-header {
-    background-color: #222;
-    padding: 20px;
+.hero {
+    background-image: url('fondo-tropical.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    text-align: center;
+    color: #fff;
+}
+.logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+h1, h2 {
+    color: #007f73;
 }
 footer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    background-color: #d6f5e3;
+    color: #333;
 }
