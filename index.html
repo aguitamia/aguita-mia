@@ -1,141 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <title>Agüita Mía – Las del Triciclo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('fondo-tropical.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            font-family: 'Fredoka', sans-serif;
-            color: #111;
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-        }
-        header {
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-        header img {
-            max-width: 1000px;
-            height: auto;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto 3rem auto;
-        }
-        h2 {
-            color: #111;
-            text-align: center;
-            font-size: 2.7rem;
-            font-weight: 900;
-            text-shadow: 1px 1px 4px rgba(255,255,255,0.3);
-        }
-        p, li {
-            font-size: 1.3rem;
-            text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
-        }
-        .whatsapp-btn {
-            display: flex;
-            justify-content: center;
-            margin: 5rem auto;
-        }
-        .whatsapp-btn a {
-            background-color: #25D366;
-            color: white;
-            font-size: 3.5rem;
-            padding: 2.5rem 5rem;
-            border-radius: 100px;
-            text-decoration: none;
-            box-shadow: 6px 6px 20px rgba(0,0,0,0.4);
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 3rem 1rem;
-            position: relative;
-            overflow: hidden;
-        }
-        .pastel-blobs {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-        .blob {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.25;
-        }
-        .blob.blue { background: #a0e7e5; width: 150px; height: 150px; top: 10px; left: 20px; }
-        .blob.pink { background: #ffb5e8; width: 200px; height: 200px; top: 40px; right: 30px; }
-        .blob.yellow { background: #fff5ba; width: 120px; height: 120px; bottom: 10px; left: 40%; }
-        .blob.green { background: #b9fbc0; width: 140px; height: 140px; bottom: 60px; right: 10%; }
-        .blob.purple { background: #d5bfff; width: 180px; height: 180px; top: 20px; left: 70%; }
-        .blob.orange { background: #ffd6a5; width: 160px; height: 160px; bottom: 20px; left: 10%; }
-        footer p {
-            position: relative;
-            z-index: 1;
-            font-size: 1.2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agüita Mía – Las del Triciclo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <img src="logo-aguitamia.png" alt="Logo Agüita Mía" />
-    </header>
+  <header>
+    <img src="logo.png" alt="Logo Agüita Mía" class="logo"/>
+    <h1>Agüita Mía – Las del Triciclo</h1>
+    <p class="slogan">Sabores que te refrescan: aguas, hielitos, bolis y más...</p>
+  </header>
 
-    <section id="quienes-somos">
-        <h2>Quiénes somos</h2>
-        <p>Somos <strong>Agüita Mía – Las del Triciclo</strong>, una marca orgullosamente tapatía, nacida del sueño de dos emprendedores con ganas de refrescar cada rincón de la ciudad con sabor, tradición y buena vibra.</p>
-        <p>Nos inspiramos en lo más bonito de nuestra cultura: el carrito del barrio, el sabor de las aguas frescas de antes, y la calidez de compartir algo rico en la calle. Llevamos nuestras aguas de sabor natural en triciclos adaptados para recorrer Guadalajara, con una propuesta fresca, visualmente atractiva y de excelente calidad.</p>
-        <p>Más que vender agua, queremos conectar con las personas, con la nostalgia y la alegría de lo cotidiano. Cada vaso es una experiencia que mezcla fruta, color, historia y corazón.</p>
+  <main>
+    <section>
+      <h2>Quiénes somos</h2>
+      <p>Somos dos emprendedores llevando el sabor y la tradición a donde estés. Ofrecemos aguas frescas, bolis, hielitos y paletas según temporada. ¡Cada día traemos una sorpresa refrescante!</p>
     </section>
 
-    <section id="mision-vision">
-        <h2>Misión y Visión</h2>
-        <p><strong>Misión:</strong> Llevar el sabor y la frescura de las aguas tradicionales mexicanas a cada rincón de la ciudad de una forma creativa, accesible y con ingredientes naturales.</p>
-        <p><strong>Visión:</strong> Ser una marca reconocida por reinventar la experiencia de tomar agua fresca en la calle, combinando calidad, estética y tradición en cada vaso.</p>
+    <section>
+      <h2>Misión</h2>
+      <p>Llevar productos refrescantes, auténticos y llenos de sabor a cada rincón de la ciudad, celebrando nuestras tradiciones con un estilo moderno.</p>
     </section>
 
-    <section id="sabores">
-        <h2>Sabores</h2>
-        <ul>
-            <li>Horchata de arroz</li>
-            <li>Horchata rosa</li>
-            <li>Jamaica</li>
-            <li>Crema de coco</li>
-            <li>Limón con pepino</li>
-            <li>Tamarindo</li>
-            <li>Piña</li>
-            <li>Aguas de estación (frutas de temporada)</li>
-        </ul>
+    <section>
+      <h2>Visión</h2>
+      <p>Ser una marca líder en bebidas y nieves tradicionales, conocidas por su frescura, calidad y cercanía.</p>
     </section>
 
-    <div class="whatsapp-btn">
-        <a href="https://wa.me/5213310702134" target="_blank">Contáctanos por WhatsApp</a>
-    </div>
+    <section>
+      <h2>Sabores</h2>
+      <ul>
+        <li>Aguas frescas: horchata, jamaica, tamarindo, piña, limón con pepino</li>
+        <li>Bolis artesanales (según temporada)</li>
+        <li>Paletas y hielitos caseros</li>
+      </ul>
+    </section>
 
-    <footer>
-        <div class="pastel-blobs">
-            <div class="blob blue"></div>
-            <div class="blob pink"></div>
-            <div class="blob yellow"></div>
-            <div class="blob green"></div>
-            <div class="blob purple"></div>
-            <div class="blob orange"></div>
-        </div>
-        <p>Si quieres el mejor sabor y tradición cerca de ti, contáctanos.</p>
-        <p>Derechos reservados 2025</p>
-    </footer>
+    <section class="contacto">
+      <a href="https://wa.me/523310702134" class="whatsapp-button">Contáctanos por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>¿Quieres el mejor sabor y tradición cerca de ti? Contáctanos.</p>
+    <p>Derechos reservados 2025</p>
+    <div class="manchas"></div>
+  </footer>
 </body>
 </html>
