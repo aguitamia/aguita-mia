@@ -13,8 +13,8 @@ header {
 }
 
 .logo {
-  max-width: 1020px;
-  width: 95%;
+  max-width: 1600px;
+  width: 98%;
   margin-bottom: 1rem;
 }
 
@@ -54,7 +54,7 @@ ul {
   background-color: #25D366;
   color: white;
   font-size: 1.3rem;
-  padding: 1rem 3rem;
+  padding: 3rem 3rem;
   border-radius: 2rem;
   text-align: center;
   text-decoration: none;
