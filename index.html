@@ -1,64 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Agüita Mía – Las del Triciclo</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agüita Mía – Las del Triciclo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: url('assets/fondo-tropical.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+    header.hero {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      text-align: center;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      max-height: 140px;
+    }
+    .contact {
+      font-size: 1.1rem;
+      color: #111;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .hero-content {
+      margin-top: 2rem;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text {
+      font-size: 1.2rem;
+      color: #000;
+    }
+    .section {
+      padding: 3rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <img src="logo.jpg" alt="Logo Agüita Mía" class="logo"/>
-        <h1>Agüita Mía – Las del Triciclo</h1>
-        <p>Aguas frescas tradicionales con estilo tropical y juvenil</p>
-    </header>
+  <!-- Sección principal -->
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo"><img src="assets/logo-recortado.png" alt="Agüita Mía – Las del Triciclo"></a>
+      <div>
+        <a href="tel:3310702134" class="contact">331 070 2134</a>
+        <a href="https://api.whatsapp.com/send?phone=523310702134" class="btn-whatsapp">WhatsApp</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1 class="hero-title">Disfruta el sabor más fresco</h1>
+      <p class="hero-text">Aguas frescas tradicionales con un estilo juvenil. Llevamos el sabor a donde estés.</p>
+    </div>
+  </header>
 
-    <section id="vasos">
-        <h2>Nuestras aguas</h2>
-        <div class="galeria">
-            <img src="vaso1.png" alt="Agüita Mía vaso 1" />
-            <img src="vaso2.png" alt="Agüita Mía vaso 2" />
-            <img src="vaso3.png" alt="Agüita Mía vaso 3" />
-            <img src="vaso4.png" alt="Agüita Mía vaso 4" />
-        </div>
-    </section>
+  <!-- Quiénes somos -->
+  <section class="section">
+    <h2>Quiénes somos</h2>
+    <p>Somos dos amigos apasionados por el emprendimiento que coincidimos en la idea de crear una marca refrescante, divertida y con esencia mexicana. Agüita Mía nació de nuestra pasión por innovar y compartir con muchas personas nuestra propia interpretación de las aguas frescas tradicionales.</p>
+  </section>
 
-    <section id="quienes-somos">
-        <h2>¿Quiénes somos?</h2>
-        <p>Agüita Mía nació del sueño de dos emprendedores tapatíos que quisieron llevar las aguas frescas de siempre a todos los rincones de Guadalajara.</p>
-    </section>
+  <!-- Misión y visión -->
+  <section class="section">
+    <h2>Misión</h2>
+    <p>Ofrecer aguas frescas deliciosas, naturales y refrescantes con un toque moderno, destacando sabores tradicionales y de temporada.</p>
+    <h2>Visión</h2>
+    <p>Convertirnos en la marca más reconocida de aguas frescas móviles en México, llevando alegría y sabor a cada calle y evento.</p>
+  </section>
 
-    <section id="mision-vision">
-        <h2>Misión</h2>
-        <p>Ofrecer aguas frescas deliciosas, accesibles y llenas de sabor, elaboradas con ingredientes de calidad y un toque tradicional.</p>
-        <h2>Visión</h2>
-        <p>Ser la marca móvil de aguas frescas preferida por las familias mexicanas, con un estilo auténtico y fresco.</p>
-    </section>
+  <!-- Sabores -->
+  <section class="section">
+    <h2>Nuestros sabores</h2>
+    <p>Horchata, Horchata Rosa, Jamaica, Limón con Pepino, Tamarindo, Piña y sabores de temporada.</p>
+  </section>
 
-    <section id="sabores">
-        <h2>Sabores</h2>
-        <ul>
-            <li>Horchata de arroz</li>
-            <li>Horchata rosa</li>
-            <li>Jamaica</li>
-            <li>Limón con pepino</li>
-            <li>Tamarindo</li>
-            <li>Piña</li>
-            <li>Sabores de temporada</li>
-        </ul>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Teléfono: <a href="https://wa.me/523310702134" target="_blank">331 070 2134 (WhatsApp)</a></p>
-        <p>Responsable: David Zuno</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Agüita Mía – Las del Triciclo</p>
-    </footer>
-
-    <a href="https://wa.me/523310702134" class="whatsapp" target="_blank">WhatsApp</a>
+  <!-- Contacto -->
+  <footer>
+    <p>Contáctanos por WhatsApp o llama al <strong>331 070 2134</strong></p>
+    <p>&copy; 2025 Agüita Mía – Las del Triciclo. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
