@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agüita Mía – Las del Triciclo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agüita Mía – Las del Triciclo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 150px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #ff5ca2;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff5ca2;
+      border-bottom: 2px solid #ff5ca2;
+      padding-bottom: 0.5rem;
+    }
+    .sabores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .sabor {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 140px;
+      text-align: center;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Agüita Mía</h1>
-        <p>Las del Triciclo</p>
-    </header>
-    <main>
-        <section>
-            <h2>Aguas frescas con sabor a tradición</h2>
-            <p>Sabores únicos, naturales y de temporada.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Contacto: 3310703134 – David Zuno</p>
-    </footer>
+  <header>
+    <img src="/logo.png" alt="Logo Agüita Mía">
+    <nav>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#mision">Misión y Visión</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos a Agüita Mía – Las del Triciclo</h2>
+    <p>Las aguas frescas más sabrosas y tradicionales de Guadalajara, con un estilo único y juvenil. ¡Síguenos y refréscate con nosotros!</p>
+    <img src="/aguas-frescas.jpg" alt="Aguas frescas coloridas" style="width:100%; border-radius: 20px; margin-top: 1rem;">
+  </section>
+
+  <section id="quienes">
+    <h2>Quiénes somos</h2>
+    <p>Somos una marca móvil que celebra la tradición mexicana de las aguas frescas, llevándolas con estilo fresco y actual a todos los rincones de Guadalajara. Nuestros triciclos son nuestra esencia y el corazón de nuestro sabor.</p>
+  </section>
+
+  <section id="mision">
+    <h2>Misión y Visión</h2>
+    <p><strong>Misión:</strong> Refrescar el día a día de las personas con aguas frescas auténticas, preparadas con ingredientes naturales y mucho cariño.</p>
+    <p><strong>Visión:</strong> Ser la marca de referencia en aguas frescas móviles en México, inspirando alegría, frescura y tradición en cada vaso.</p>
+  </section>
+
+  <section id="sabores">
+    <h2>Nuestros Sabores</h2>
+    <div class="sabores">
+      <div class="sabor">Horchata</div>
+      <div class="sabor">Horchata Rosa</div>
+      <div class="sabor">Jamaica</div>
+      <div class="sabor">Crema de Coco</div>
+      <div class="sabor">Limón con Pepino</div>
+      <div class="sabor">Tamarindo</div>
+      <div class="sabor">Piña</div>
+      <div class="sabor">Sabores de Temporada</div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres un triciclo de Agüita Mía en tu evento o colonia?</p>
+    <p><strong>Teléfono:</strong> 331 070 3134</p>
+    <p><strong>Responsable:</strong> David Zuno</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Agüita Mía – Las del Triciclo. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
