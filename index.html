@@ -41,23 +41,44 @@
         .whatsapp-btn {
             display: flex;
             justify-content: center;
-            margin: 2rem auto;
+            margin: 4rem auto;
         }
         .whatsapp-btn a {
             background-color: #25D366;
             color: white;
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            border-radius: 50px;
+            font-size: 2rem;
+            padding: 2rem 4rem;
+            border-radius: 80px;
             text-decoration: none;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
         }
         footer {
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 2rem;
-            font-size: 1rem;
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .pastel-blobs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        .blob.blue { background: #a0e7e5; width: 150px; height: 150px; top: 10px; left: 20px; }
+        .blob.pink { background: #ffb5e8; width: 200px; height: 200px; top: 40px; right: 30px; }
+        .blob.yellow { background: #fff5ba; width: 120px; height: 120px; bottom: 10px; left: 40%; }
+        footer p {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
@@ -93,16 +114,16 @@
         </ul>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Teléfono: 331 070 2134</p>
-    </section>
-
     <div class="whatsapp-btn">
         <a href="https://wa.me/5213310702134" target="_blank">Contáctanos por WhatsApp</a>
     </div>
 
     <footer>
+        <div class="pastel-blobs">
+            <div class="blob blue"></div>
+            <div class="blob pink"></div>
+            <div class="blob yellow"></div>
+        </div>
         <p>Si quieres el mejor sabor y tradición cerca de ti, contáctanos.</p>
         <p>Derechos reservados 2025</p>
     </footer>
